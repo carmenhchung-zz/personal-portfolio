@@ -1,9 +1,0 @@
-User-Agent: *
-Disallow: 
-Allow: /index.html
-Allow: /about.html
-Allow: /portfolio.html
-Allow: /lslookbook.html
-Allow: /contact.html
-
-Sitemap: https://carmen-chung.000webhostapp.com/sitemap.xml
