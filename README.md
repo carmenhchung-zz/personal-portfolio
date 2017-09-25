@@ -1,5 +1,5 @@
 # Personal Portfolio Project Documentation
-# (https://carmen-chung.000webhostapp.com/)
+# https://carmen-chung.000webhostapp.com/
 ## 1. Audience
 
 The project mandate was to design a portfolio website that would showcase our talent, abilities, coding experience and personalities to prospective employers. 
