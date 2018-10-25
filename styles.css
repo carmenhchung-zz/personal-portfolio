@@ -215,10 +215,10 @@ a.black:active {
     justify-content: flex-end;
 }
 .portbanner {
-    margin: 0 auto;
-    padding-top: 50px;
-    vertical-align: center;
-    width: 30%;
+  margin: 0 auto;
+  padding-top: 50px;
+  vertical-align: center;
+  width: 30%;
 }
 .imagelogo {
     margin: 0 auto;
