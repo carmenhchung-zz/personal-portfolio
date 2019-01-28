@@ -1,21 +1,53 @@
-$(document).ready( function(){
+$(document).ready(function () {
+
+  // Small device navigation menu toggle.
+  $('#toggle').click(function () {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
+
+  // Arrow scroll function.
+  $(window).scroll(function () {
+    var topWindow = $(window).scrollTop();
+    var topWindow = topWindow * 1.5;
+    var windowHeight = $(window).height();
+    var position = topWindow / windowHeight;
+    position = 1 - position;
+    $('.arrow-wrap').css('opacity', position);
+  });
+
+  $(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
 
   var quotes = $(".quotes");
   var quoteIndex = -1;
+
   function showNextQuote() {
-      ++quoteIndex;
-      quotes.eq(quoteIndex % quotes.length)
-        .fadeIn(2000)
-        .delay(1000)
-        .fadeOut(2000, showNextQuote);
+    ++quoteIndex;
+    quotes.eq(quoteIndex % quotes.length)
+      .fadeIn(2000)
+      .delay(1000)
+      .fadeOut(2000, showNextQuote);
   }
   showNextQuote();
 
   //Code stolen from css-tricks for smooth scrolling
-  $('a[href*=\\#]:not([href=\\#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  $('a[href*=\\#]:not([href=\\#])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
@@ -25,8 +57,8 @@ $(document).ready( function(){
     }
   });
 
-//this is where we apply opacity to the arrow
-  $(window).scroll( function(){
+  //this is where we apply opacity to the arrow
+  $(window).scroll(function () {
 
     // get scroll position
     var topWindow = $(window).scrollTop();
