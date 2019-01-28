@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-		w[l] = w[l] || []; w[l].push({
-			'gtm.start':
-				new Date().getTime(), event: 'gtm.js'
-		}); var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-PC73XHG');</script>
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-PC73XHG');
+	</script>
 	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta name="description" content="Portfolio of Carmen Chung - Coding Design Videography">
@@ -23,53 +32,70 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC73XHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<!-- Floating navigation bar -->
+
 	<div class="nav">
-		<ul>
-			<li>
-				<a class="yell" href="index.html">HOME</a>
-			</li>
-			<li>
-				<a class="yell" href="about.html">ABOUT</a>
-			</li>
-			<li>
-				<a class="yell" href="portfolio.html">PORTFOLIO</a>
-			</li>
-<!-- <li><a href="blog.html" class="yell">BLOG</a>
-      </li> -->
-			<li>
-				<a class="yell" href="contact.html">CONTACT</a>
-			</li>
-		</ul>
+		<!-- Floating navigation bar for medium up devices -->
+		<div class="nav-medium-up">
+			<ul>
+				<li><a class="yell" href="index.html">HOME</a></li>
+				<li><a class="yell" href="portfolio.html">PORTFOLIO</a></li>
+				<li><a class="yell" href="media.html">MEDIA</a></li>
+				<li><a class="yell" href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+
+		<!-- Hamburger menu for small devices -->
+		<div class="nav-medium-down">
+			<div class="nav-container" id="toggle">
+				<span class="top"></span> <span class="middle"></span>
+				<span class="bottom"></span>
+			</div>
+			<div class="overlay" id="overlay">
+				<nav class="overlay-menu">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="portfolio.html">PORTFOLIO</a></li>
+						<li><a href="media.html">MEDIA</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</div>
 
-<!-- Contact block (white) -->
+	<!-- Contact block (white) -->
 	<div class="content">
+
 		<div class="jumbotron jumbotron-fluid jumbowhite">
 			<div class="container-fluid">
-				<div class="row"><img alt="Carmen Chung logo" class="imagelogo" src="favicon.png"></div>
-				<div class="row">
-					<div class="heading">
-						<p>LIKE WHAT YOU SEE?</p>
-					</div>
-					<div class="expandedtext">
-						Let's be friends. On <a class="black" href="https://www.linkedin.com/in/carmenchung/" target="_blank"><u>LinkedIn</u></a> or <a class="black" href="https://github.com/carmenhchung" target="_blank"><u>Github</u></a>.
-						<p>Anything else is kinda weird if I don't know you.</p>
-					</div>
+				<h1>
+					<img alt="Carmen Chung" class="portbanner" src="images/greyscale.png"></p>
+				</h1>
+			</div>
+			<div class="row">
+				<div class="heading">
+					<p>LIKE WHAT YOU SEE?</p>
+				</div>
+				<div class="text">
+					Let's be friends. On <a class="black" href="https://www.twitter.com/carmenhchung/" target="_blank"><u>Twitter</u></a>,
+					<a class="black" href="https://www.linkedin.com/in/carmenchung/" target="_blank"><u>LinkedIn</u></a>
+					or <a class="black" href="https://github.com/carmenhchung" target="_blank"><u>Github</u></a>.
+					<p>Anything else is kinda weird if I don't know you.</p>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
 	<script src="script.js">
 	</script>
 </body>
+
 </html>

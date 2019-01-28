@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-		w[l] = w[l] || []; w[l].push({
-			'gtm.start':
-				new Date().getTime(), event: 'gtm.js'
-		}); var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-PC73XHG');</script>
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-PC73XHG');
+	</script>
 	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
-  <meta name="description" content="Portfolio of Carmen Chung - Coding Design Videography">
-  <meta name="author" content="Carmen Chung">
+	<meta name="description" content="Portfolio of Carmen Chung - Coding Design Videography">
+	<meta name="author" content="Carmen Chung">
 	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<link href="favicon.png" rel="icon">
@@ -22,174 +31,162 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo:900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC73XHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-	<!-- Floating navigation bar -->
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC73XHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 	<div class="nav">
-		<ul>
-			<li>
-				<a class="yell" href="index.html">HOME</a>
-			</li>
-			<li>
-				<a class="yell" href="about.html">ABOUT</a>
-			</li>
-			<li>
-				<a class="yell" href="portfolio.html">PORTFOLIO</a>
-			</li>
-  <!-- <li><a href="blog.html" class="yell">BLOG</a></li> -->
-			<li>
-				<a class="yell" href="contact.html">CONTACT</a>
-			</li>
-		</ul>
+		<!-- Floating navigation bar for medium up devices -->
+		<div class="nav-medium-up">
+			<ul>
+				<li><a class="yell" href="index.html">HOME</a></li>
+				<li><a class="yell" href="portfolio.html">PORTFOLIO</a></li>
+				<li><a class="yell" href="media.html">MEDIA</a></li>
+				<li><a class="yell" href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+
+		<!-- Hamburger menu for small devices -->
+		<div class="nav-medium-down">
+			<div class="nav-container" id="toggle">
+				<span class="top"></span> <span class="middle"></span>
+				<span class="bottom"></span>
+			</div>
+			<div class="overlay" id="overlay">
+				<nav class="overlay-menu">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="portfolio.html">PORTFOLIO</a></li>
+						<li><a href="media.html">MEDIA</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>
+				PORTFOLIO
+			</h1>
+		</div>
 	</div>
 
-  <!-- Three images - videography, design, coding -->
-	<div class="text">
-		<a href="portfolio.html#videography"><img alt="Carmen Chung's videography projects" class="portbanner" src="images/videography.jpg"></a> <a href="portfolio.html#design"><img alt="Carmen Chung's design projects" class="portbanner" src="images/design.jpg"></a> <a href="portfolio.html#coding"><img alt="Carmen Chung's coding projects" class="portbanner" src="images/coding.jpg"></a>
-	</div>
-
-  <!-- Videography block -->
+	<!-- Videography block -->
 	<div class="cards">
 		<div class="row videography-block">
-			<div class="col-xs-12">
-				<div id="videography">
-					<div class="heading">
-						01.
-						<p>VIDEOGRAPHY</p>
-					</div>
-				</div>
-				<div class="expandedtext">
-					<p>filming &amp; editing &amp; production</p>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-md-6 col-sm-12"><img alt="Justice Without Borders Legal Fellowship Recruitment Video" class="star" src="images/jwb/recruit.jpg"></div>
+				<div class="col-md-6 col-sm-12"><img alt="Web scraper in Ruby for dog treats" class="star" src="images/carmenandsachi.jpg"></div>
 				<div class="col-md-6 col-sm-12">
+					<div id="videography">
+						<div class="heading">
+							01.
+							<p>Fetch My Treats</p>
+						</div>
+					</div>
+					<div class="text">
+						<p><b>&lt; webscraper in ruby &gt;</b></p>
+					</div>
 					<div class="expandedtext">
-						<p><b>Justice Without Borders: Recruitment Video</b></p>
-						<p>Volunteered to produce, film and edit a recruitment video for the charity Justice Without Borders in order to attract volunteers for the Legal Fellowship programme in Hong Kong.</p>
-						<p><a class="button" href="https://www.youtube.com/watch?v=BoRx3OSJVRg&t=63s" target="_blank">VIEW VIDEO</a></p>
+						<br>I have an 11 year old rescue schnauzer called Sachi (short for Sachiko), and in my spare time, I foster
+						rescue
+						dogs.</br>
+						<br>One of my pet peeves (pun fully intended) is getting ripped off. Especially when it comes to Sachi's
+						favourite treats, Greenies.</br>
+						<br>I built a web scraper in Ruby to compare the price of Greenies on various online pet stores, using open-uri
+						and nokogiri.</br>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-sm-12 pull-right"><img alt="Justice Without Borders Technology Court Manual Launch Event Promo Video" class="star" src="images/jwb/launch.png"></div>
+				<div class="col-md-6 col-sm-12 pull-right"><img alt="Clean Nest - App to find a verified cleaner in Australia"
+					 class="star" src="images/cleannest.jpg"></div>
 				<div class="col-md-6 col-sm-12 pull-left">
-					<div class="expandedtext">
-						<p><b>Justice Without Borders - Technology Court Manual Launch Event Promo Video</b></p>
-					</div>
-					<div class="expandedtext">
-						<p>Volunteered to produce, film and edit a short video of a publication launch event run by the charity Justice Without Borders.</p>
-						<p><a class=" button" href="https://www.youtube.com/watch?v=ghbA2QZh5MM&t=1s" target="_blank">VIEW VIDEO</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-  <!-- Design block -->
-		<div class="row design-block">
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="design">
+					<div id="videography">
 						<div class="heading">
 							02.
-							<p>DESIGN</p>
+							<p>Clean My Home</p>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="expandedtext" style="width: 100%;">
-						<p>wireframe &amp; branding &amp; website design</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12"><img alt="Lifestyle Lookbook blog redesign" class="star" src="images/lslookbook/lslookbook.jpg"></div>
-				<div class="col-md-6 col-sm-12">
-					<div class="expandedtext">
-						<p><b>Lifestyle Lookbook Redesign</b></p>
+					<div class="text">
+						<p><b>&lt; two sided marketplace using ruby on rails &gt;</b></p>
 					</div>
 					<div class="expandedtext">
-						<p>Redesigned the blog Lifestyle Lookbook, including sketching our design on paper, creating a Pinterest moodboard, selecting appropriate fonts and colours, and creating a basic wireframe of the new design.</p>
-						<p>Justinmind Prototyper 8.0.1 // Illustration // Google Fonts</p>
-						<p><a class="button" href="lslookbook.html">LEARN MORE</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 pull-right"><img alt="Tokyo 2020 Olympics website redesign" class="star" src="images/olympics/tokyo2020.jpg"></div>
-				<div class="col-md-6 col-sm-12 pull-left">
-					<div class="expandedtext">
-						<p><b>Tokyo 2020 Olympics</b></p>
-					</div>
-					<div class="expandedtext">
-						<p>Worked in a team over the course of two hours to put together a re-design of the landing page of the Tokyo 2020 Olympics website.</p>
-						<p>MockPlus // HTML // CSS // Google Maps integration // Bootstrap</p>
-						<p><a class="button" href="https://github.com/carmenhchung/Tokyo-2020-Olympics" target="_blank">LEARN MORE</a></p>
+						<br>I'm a minimalist who enjoys clean code*...and a clean home. During my coding bootcamp, I built a two sided
+						marketplace using Ruby on Rails, where vetted people can be paid to clean homes, and customers can book verified
+						cleaners. </br>
+						<br>Includes location based search using Google maps, and a review system.</br>
+
+						<br>*This was built when I was first learning Ruby on Rails, so ironically the code is the one thing that is not
+						particularly clean!</br>
 					</div>
 				</div>
 			</div>
 		</div>
 
-  <!-- Coding block -->
-		<div class="row coding-block">
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="coding">
-						<div class="heading">
-							03.
-							<p>CODING</p>
+		<!-- Design block -->
+		<div class="cards">
+			<div class="row videography-block">
+				<div class="row">
+					<div class="col-md-6 col-sm-12"><img alt="Web scraper in Ruby for dog treats" class="star" src="images/instagram.jpg"></div>
+					<div class="col-md-6 col-sm-12">
+						<div id="videography">
+							<div class="heading">
+								03.
+								<p>Make Me Popular</p>
+							</div>
+						</div>
+						<div class="text">
+							<p><b>&lt; instagram bot in python deployed on heroku &gt;</b></p>
 						</div>
 						<div class="expandedtext">
-							<p>ruby &amp; terminal</p>
+							<br>When I was in Grade 10, one of my favourite teachers wrote in my school report: "Carmen has an appreciation
+							for the absurd." That remains true to this day...and nothing is more absurd than human behaviour. I have
+							deployed a
+							python script that runs every hour (using Heroku Scheduler), creating a bot that interacts with people on
+							Instagram.
+							I'm constantly amused when people (and better yet, other bots) interact with my bot.
+							</br>
+							<br> I'm currently working on running the script on a Raspberry Pi.</br>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12 pull-right"><img alt="Clean Nest - App to find a verified cleaner in Australia"
+						 class="star" src="images/poleathletica.jpg"></div>
+					<div class="col-md-6 col-sm-12 pull-left">
+						<div id="videography">
+							<div class="heading">
+								04.
+								<p>Measure my Metrics</p>
+							</div>
+						</div>
+						<div class="text">
+							<p><b>&lt; responsive mobile web app design with ui/ux & digital marketing optimisations &gt;</b></p>
+						</div>
+						<div class="expandedtext">
+							<br>Metrics. What software engineer doesn't love metrics?</br>
+							<br>I created a simple, mobile responsive landing page for a dance studio, Pole Athletica, and installed HotJar
+							and
+							Google
+							Analytics to track user engagement and other relevant metrics. I have experimented with UI/UX A/B testing (wow
+							that
+							was a lot of letters), market surveys, and both SEO and SEM. </br>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12"><img alt="Trent Shields or Not Game in Ruby" class="star" src="images/ruby/trent.jpg"></div>
-				<div class="col-md-6 col-sm-12">
-					<div class="expandedtext">
-						<p><b>Trent or Not Game</b></p>
-					</div>
-					<div class="expandedtext">
-						<p>Worked in a team to programme a game in Terminal/Command Prompt using Ruby where players guess whether the pixelated image is Trent (our teacher) or not. The game will track and tally the score at the end of the game.</p>
-						<p>Ruby // Terminal</p>
-						<p><a class="button" href="https://github.com/carmenhchung/Trent-or-Not-Game" target="_blank">LEARN MORE</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-12 pull-right"><img alt="Amazon Website programme in Ruby" class="star" src="images/ruby/books.jpg"></div>
-				<div class="col-md-6 col-sm-12 pull-left">
-					<div class="expandedtext">
-						<p><b>Amazon Website</b></p>
-					</div>
-					<div class="expandedtext">
-						<p>Worked in a team to programme an application in Terminal/Command Prompt using Ruby where users will select books from a repository to purchase, and the application will recommend further books based on the books that the user appears interested in.</p>
-						<p>Ruby // Terminal</p>
-						<p><a class="button" href="https://github.com/carmenhchung/Amazon" target="_blank">LEARN MORE</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js">
-	</script>
-	<script src="script.js">
-	</script>
-	<script src="portfolio.js">
-	</script>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+			</script>
+			<script src="script.js">
+			</script>
+			<script src="portfolio.js">
+			</script>
 </body>
+
 </html>
