@@ -18,6 +18,7 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-PC73XHG");
     </script>
+
   <!-- End Google Tag Manager -->
   <meta charset="utf-8" />
   <meta name="description" content="Portfolio of Carmen Chung - Coding Design Videography" />
@@ -37,7 +38,10 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC73XHG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC73XHG" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
 
   <div class="nav">
     <!-- Floating navigation bar for medium up devices -->
@@ -75,51 +79,67 @@
       <div class="container-fluid">
         <br />
         <h1>
-          COMING SOON
+          MEDIA
         </h1>
-        <br />
+        <div id="medium-widget"></div>
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>
+          MediumWidget.Init({
+            renderTo: '#medium-widget',
+            params: {
+              "resource": "https://medium.com/@carmenhchung",
+              "postsPerLine": 3,
+              "limit": 10,
+              "picture": "big",
+              "fields": ["description", "publishAt", "author", "claps"],
+              "ratio": "landscape"
+            }
+          })
+        </script>
       </div>
-    </div>
-    <!-- Quote block (yellow) -->
-    <div class="content" id="quotes">
-      <div class="jumbotron jumbotron-fluid jumboyell">
-        <div class="container-fluid">
-          <div class="heading-black">
-            <p>WHAT PEOPLE SAY</p>
-          </div>
-          <div class="text">
-            <p></p>
-            <div class="quotes">
-              "For someone who dresses like she's homeless, she cleans up websites pretty well." - Friend.
-            </div>​
-            <div class="quotes">
-              "She should never have quit law." - Asian Mother.
+      <!-- Quote block (yellow) -->
+      <div class="content" id="quotes">
+        <div class="jumbotron jumbotron-fluid jumboyell">
+          <div class="container-fluid">
+            <div class="heading-black">
+              <p>WHAT PEOPLE SAY</p>
             </div>
-            <div class="quotes">
-              "She's okay. I guess." - Classmate.
-            </div>
-            <div class="quotes">
-              "Who's Carmen?" - Boss.
+            <div class="text">
+              <p></p>
+              <div class="quotes">
+                "For someone who dresses like she's homeless, she cleans up
+                websites pretty well." - Friend.
+              </div>
+              ​
+              <div class="quotes">
+                "She should never have quit law." - Asian Mother.
+              </div>
+              <div class="quotes">
+                "She's okay. I guess." - Classmate.
+              </div>
+              <div class="quotes">
+                "Who's Carmen?" - Boss.
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Social media links (yellow) -->
-        <div class="container-fluid">
-          <div class="row">
-            <a href="https://www.twitter.com/carmenhchung" target="_blank"><img class="socialmedia" alt="Carmen Chung's Twitter Account"
-                src="images/twitter.png"></a>
-            <a href="https://www.linkedin.com/in/carmenchung/" target="_blank"><img class="socialmedia" alt="Carmen Chung's LinkedIn profile"
-                src="images/linkedin.png"></a>
-            <a href="https://github.com/carmenhchung" target="_blank"><img class="socialmedia" alt="Carmen Chung's Github profile"
-                src="images/github.png"></a>
-          </div>
-        </div>
-      </div>
-    </div>
+          <!-- Social media links (yellow) -->
+          <div class="container-fluid">
+            <div class="row">
+              <a href="https://www.twitter.com/carmenhchung" target="_blank"><img class="socialmedia" alt="Carmen Chung's Twitter Account"
+                  src="images/twitter.png" /></a>
 
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+              <a href="https://www.linkedin.com/in/carmenchung/" target="_blank"><img class="socialmedia" alt="Carmen Chung's LinkedIn profile"
+                  src="images/linkedin.png" /></a>
+
+              <a href="https://github.com/carmenhchung" target="_blank"><img class="socialmedia" alt="Carmen Chung's Github profile"
+                  src="images/github.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
