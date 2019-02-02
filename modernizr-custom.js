@@ -1,3 +1,127 @@
 /*! modernizr 3.6.0 (Custom Build) | MIT *
- * https://modernizr.com/download/?-setclasses !*/
-!function(n,e,s){function o(n,e){return typeof n===e}function a(){var n,e,s,a,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),t.push((a?"":"no-")+r.join("-"))}}function i(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}var t=[],f=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();a(),i(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);
+ * https://modernizr.com/download/?-webp-setclasses !*/
+! function (e, n, A) {
+  function o(e, n) {
+    return typeof e === n
+  }
+
+  function t() {
+    var e, n, A, t, a, i, l;
+    for (var f in r)
+      if (r.hasOwnProperty(f)) {
+        if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length))
+          for (A = 0; A < n.options.aliases.length; A++) e.push(n.options.aliases[A].toLowerCase());
+        for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++) i = e[a], l = i.split("."), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? "" : "no-") + l.join("-"))
+      }
+  }
+
+  function a(e) {
+    var n = u.className,
+      A = Modernizr._config.classPrefix || "";
+    if (c && (n = n.baseVal), Modernizr._config.enableJSClass) {
+      var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)");
+      n = n.replace(o, "$1" + A + "js$2")
+    }
+    Modernizr._config.enableClasses && (n += " " + A + e.join(" " + A), c ? u.className.baseVal = n : u.className = n)
+  }
+
+  function i(e, n) {
+    if ("object" == typeof e)
+      for (var A in e) f(e, A) && i(A, e[A]);
+    else {
+      e = e.toLowerCase();
+      var o = e.split("."),
+        t = Modernizr[o[0]];
+      if (2 == o.length && (t = t[o[1]]), "undefined" != typeof t) return Modernizr;
+      n = "function" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? "" : "no-") + o.join("-")]), Modernizr._trigger(e, n)
+    }
+    return Modernizr
+  }
+  var s = [],
+    r = [],
+    l = {
+      _version: "3.6.0",
+      _config: {
+        classPrefix: "",
+        enableClasses: !0,
+        enableJSClass: !0,
+        usePrefixes: !0
+      },
+      _q: [],
+      on: function (e, n) {
+        var A = this;
+        setTimeout(function () {
+          n(A[e])
+        }, 0)
+      },
+      addTest: function (e, n, A) {
+        r.push({
+          name: e,
+          fn: n,
+          options: A
+        })
+      },
+      addAsyncTest: function (e) {
+        r.push({
+          name: null,
+          fn: e
+        })
+      }
+    },
+    Modernizr = function () {};
+  Modernizr.prototype = l, Modernizr = new Modernizr;
+  var f, u = n.documentElement,
+    c = "svg" === u.nodeName.toLowerCase();
+  ! function () {
+    var e = {}.hasOwnProperty;
+    f = o(e, "undefined") || o(e.call, "undefined") ? function (e, n) {
+      return n in e && o(e.constructor.prototype[n], "undefined")
+    } : function (n, A) {
+      return e.call(n, A)
+    }
+  }(), l._l = {}, l.on = function (e, n) {
+    this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () {
+      Modernizr._trigger(e, Modernizr[e])
+    }, 0)
+  }, l._trigger = function (e, n) {
+    if (this._l[e]) {
+      var A = this._l[e];
+      setTimeout(function () {
+        var e, o;
+        for (e = 0; e < A.length; e++)(o = A[e])(n)
+      }, 0), delete this._l[e]
+    }
+  }, Modernizr._q.push(function () {
+    l.addTest = i
+  }), Modernizr.addAsyncTest(function () {
+    function e(e, n, A) {
+      function o(n) {
+        var o = n && "load" === n.type ? 1 == t.width : !1,
+          a = "webp" === e;
+        i(e, a && o ? new Boolean(o) : o), A && A(n)
+      }
+      var t = new Image;
+      t.onerror = o, t.onload = o, t.src = n
+    }
+    var n = [{
+        uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
+        name: "webp"
+      }, {
+        uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
+        name: "webp.alpha"
+      }, {
+        uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
+        name: "webp.animation"
+      }, {
+        uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
+        name: "webp.lossless"
+      }],
+      A = n.shift();
+    e(A.name, A.uri, function (A) {
+      if (A && "load" === A.type)
+        for (var o = 0; o < n.length; o++) e(n[o].name, n[o].uri)
+    })
+  }), t(), a(s), delete l.addTest, delete l.addAsyncTest;
+  for (var p = 0; p < Modernizr._q.length; p++) Modernizr._q[p]();
+  e.Modernizr = Modernizr
+}(window, document);
