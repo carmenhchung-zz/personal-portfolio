@@ -148,6 +148,16 @@
       </div>
 
     </div>
+    <script>
+      // Modernizr used to detec webp compatability.
+      Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+        } else {
+          // not-supported
+        }
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <script src="script.js"></script>
