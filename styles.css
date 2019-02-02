@@ -578,7 +578,7 @@ h1 {
   background-position: center 30%;
 }
 
-/* .no-webp .hero-image {
+.no-webp .hero-image {
   position: relative;
   margin: 60px 0 0;
   margin: 0 auto;
@@ -594,7 +594,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: center 30%;
-} */
+}
 
 @media only screen and (min-width: 720px) and (max-width: 899px) {
   .webp .hero-image {
@@ -619,7 +619,7 @@ h1 {
     background-position: center top;
   }
 
-  /* .no-webp .hero-image {
+  .no-webp .hero-image {
     position: relative;
     margin: 70px 0 0;
     vertical-align: center;
@@ -636,7 +636,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center top;
-  } */
+  }
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1399px) {
@@ -662,7 +662,7 @@ h1 {
     background-position: center top;
   }
 
-  /* .no-webp .hero-image {
+  .no-webp .hero-image {
     position: relative;
     margin: 70px 0 0;
     vertical-align: center;
@@ -679,7 +679,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center top;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1699px) {
@@ -705,7 +705,7 @@ h1 {
     background-position: center top;
   }
 
-  /* .no-webp .hero-image {
+  .no-webp .hero-image {
     position: relative;
     margin: 60px 0 0;
     vertical-align: center;
@@ -722,7 +722,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center top;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1700px) and (max-width: 1899px) {
@@ -748,7 +748,7 @@ h1 {
     background-position: center top;
   }
 
-  /* .no-webp .hero-image {
+  .no-webp .hero-image {
     position: relative;
     margin: 60px 0 0;
     vertical-align: center;
@@ -765,7 +765,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: center top;
-  } */
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -789,7 +789,7 @@ h1 {
     background-position: center top;
   }
 
-  /* .no-webp .hero-image {
+  .no-webp .hero-image {
     position: relative;
     margin: 60px 0 0;
     vertical-align: center;
@@ -804,7 +804,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center top;
-  } */
+  }
 }
 
 /*Images*/
