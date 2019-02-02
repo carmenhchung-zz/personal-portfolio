@@ -572,7 +572,7 @@ h1 {
   display: block;
   width: 100%;
   background-color: black;
-  background: url(images/head1.webp), no-repeat, #000000;
+  background: url(images/head2.webp), no-repeat, #000000;
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: center 30%;
@@ -593,7 +593,7 @@ h1 {
     height: -o-calc(100vh - 60px);
     /* Opera */
     background-color: black;
-    background: url(images/head1.webp),
+    background: url(images/head2.webp),
       no-repeat,
       #000000;
     background-repeat: no-repeat;
@@ -617,7 +617,7 @@ h1 {
     height: -o-calc(100vh - 60px);
     /* Opera */
     background-color: black;
-    background: url(images/head1.webp),
+    background: url(images/head2.webp),
       no-repeat,
       #000000;
     background-repeat: no-repeat;
@@ -641,7 +641,7 @@ h1 {
     height: -o-calc(100vh - 60px);
     /* Opera */
     background-color: black;
-    background: url(images/head1.webp),
+    background: url(images/head2.webp),
       no-repeat,
       #000000;
     background-repeat: no-repeat;
@@ -665,7 +665,7 @@ h1 {
     height: -o-calc(100vh - 60px);
     /* Opera */
     background-color: black;
-    background: url(images/head1.webp),
+    background: url(images/head2.webp),
       no-repeat,
       #000000;
     background-repeat: no-repeat;
