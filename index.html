@@ -33,6 +33,20 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
+  <script src="modernizr-custom.js"></script>
+  <script>
+    // Modernizr used to detec webp compatability.
+    Modernizr.on('webp', function (result) {
+      if (result) {
+        // supported
+      } else {
+        // not-supported
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -148,20 +162,6 @@
       </div>
 
     </div>
-    <script>
-      // Modernizr used to detec webp compatability.
-      Modernizr.on('webp', function (result) {
-        if (result) {
-          // supported
-        } else {
-          // not-supported
-        }
-      });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <script src="modernizr-custom.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
