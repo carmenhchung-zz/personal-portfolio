@@ -1,3 +1,12 @@
+// Modernizr used to detec webp compatability.
+Modernizr.on('webp', function (result) {
+  if (result) {
+    // supported
+  } else {
+    // not-supported
+  }
+});
+
 $(document).ready(function () {
 
   // Small device navigation menu toggle.
